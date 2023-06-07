@@ -1,16 +1,25 @@
 html:
   <div class="container">
-    
-    <span class="sawarabi">Hello, my name is ${name}</span>
-    <span class="sawarabi">I am ${my_role}.</span>
-    <img src="./my-icon-512.jpg">
+    <div class="profile_head">
+      <div>
+        <p class="sawarabi">Welcome to the portfolio of ${name}</p>
+        <p class="sawarabi">I am ${my_role}.</p>
+      </div>
+      <img class="profile_img" src="./my-icon-512.jpg">
+    </div>
     
 
     <h2 >作品 / プロジェクト</h2>
     <h3 >Blve - Webフレームワーク</h3>
     <div>
     <p>高速かつ洗練されたWebフロントエンドフレームワークです。</p>
-    <p>このサイトはBlveを用いて作成されています。</p>
+    <p>現在はまだベータ版で、利用できる機能は限られていますが、今後も機能を追加していく予定です。</p>
+    <p>このポートフォリオはBlveを用いて作成されています。(<a href="https://github.com/s19514tt/portfolio">このポートフォリオのリポジトリ</a>)</p>
+    <p>Blveのリポジトリは<a href="https://github.com/blvedev/blve">こちら</a></p>
+    <h3 >人狼ビレッジオンライン</h3>
+    <p>人狼ゲームをオンラインで遊べるサービスです。</p>
+    <p>企画・デザイン・アプリ開発・バックエンド開発・インフラ構築など、イラストを除く全ての開発を担当しました。</p>
+    <p>40カ国以上からのアクセスがあり、現在も運営を続けています。</p>
     </div>
     <h2>経歴 / Career</h2>
     <h3>2019年4月 - 2023年3月</h3>
@@ -22,20 +31,20 @@ html:
   </div>
 script:
   const name = "Tatsuru Tomizawa"
-  let my_role = "a student"
+  let my_role = "a student in Keio University"
   setInterval(()=>{
-    if(my_role === "a student"){
+    if(my_role === "a student in Keio University"){
       my_role = "a software engineer"
     } else if (my_role === "a software engineer"){
-      my_role = "a student"
+      my_role = "a student in Keio University"
     }
   }, 5000)
 style:
   .container {
     width: calc(100% - 20px);
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 0 10px #ccc;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -49,4 +58,18 @@ style:
     color: #333;
     text-decoration: underline;
 
+  }
+
+  .profile_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+
+  }
+
+  .profile_img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
   }
