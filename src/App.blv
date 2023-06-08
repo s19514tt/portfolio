@@ -20,23 +20,26 @@ html:
     <p>人狼ゲームをオンラインで遊べるサービスです。</p>
     <p>企画・デザイン・アプリ開発・バックエンド開発・インフラ構築など、イラストを除く全ての開発を担当しました。</p>
     <p>40カ国以上からのアクセスがあり、現在も運営を続けています。</p>
+    <p><a href="https://werewolf-village.com/">人狼ビレッジオンライン公式ホームページ</a></p>
     </div>
     <h2>経歴 / Career</h2>
     <h3>2019年4月 - 2023年3月</h3>
     <h4>慶應義塾大学 総合政策学部 総合政策学科</h4>
     <h3>2023年4月 - </h3>
     <h4>慶應義塾大学大学院 政策・メディア研究科 政策・メディア専攻</h4>
+    <h3>2021年8月 - </h3>
+    <h4>株式会社ispecでフルスタックエンジニアとしてインターン(SaaSの開発、社内業務効率化に従事)</h4>
 
 
   </div>
 script:
   const name = "Tatsuru Tomizawa"
-  let my_role = "a student in Keio University"
+  let my_role = "a student"
   setInterval(()=>{
-    if(my_role === "a student in Keio University"){
+    if(my_role === "a student"){
       my_role = "a software engineer"
     } else if (my_role === "a software engineer"){
-      my_role = "a student in Keio University"
+      my_role = "a student"
     }
   }, 5000)
 style:
