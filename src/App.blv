@@ -43,6 +43,10 @@ html:
     <p>FaSTフレームワークの開発プロジェクトは現在中止しており、同様の手法を用いながらRustで開発したBlveフレームワークに現在は注力しています。</p>
     <img style="width:50%;margin:auto;" src="./boxplot-1000-6000.png">
     </div>
+    <h3 >Vucript</h3>
+    <p>Vue.jsのコードを書きやすくするためのライブラリです。</p>
+    <p><a href="https://qiita.com/s19514tt/items/fe050cc85e536ef8bf36">Qiita記事</a>に詳細を記しています</p>
+    </div>
     <h2>経歴 / Career</h2>
     <h3>2019年4月 - 2023年3月</h3>
     <h4>慶應義塾大学 総合政策学部 総合政策学科</h4>
