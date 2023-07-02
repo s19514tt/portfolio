@@ -7,13 +7,14 @@ html:
       </div>
       <img class="profile_img" src="./my-icon-512.jpg">
     </div>
-    <h2 >作品 / プロジェクト</h2>
-    <h3 >Blve - Webフレームワーク</h3>
+    <h2 >現在開発中・運営中の作品 / プロジェクト</h2>
+    <h3 >Blve - Webフロントエンドフレームワーク</h3>
     <div>
       <p>高速かつ洗練されたWebフロントエンドフレームワークです。</p>
+      <p>React・Vue.js・Svelteと比較して高速なレンダリングを目指して、開発を行っています。</p>
       <p>現在はまだベータ版で、利用できる機能は限られていますが、今後も機能を追加していく予定です。</p>
       <p>このポートフォリオはBlveを用いて作成されています。(<a href="https://github.com/s19514tt/portfolio">このポートフォリオのリポジトリ</a>)</p>
-      <p>Blveのリポジトリは<a href="https://github.com/blvedev/blve">こちら</a></p>
+      <p>Blveのリポジトリは<a href="https://github.com/blvedev/blve">こちら</a>です。</p>
       <h4>使用技術</h4>
       <ul>
         <li>Rust(Blveのコンパイラ部分)</li>
@@ -35,24 +36,23 @@ html:
         <li>Redis - キャッシュ用データベース</li>
         <li>MongoDB - キャッシュ用データベース</li>
       </ul>
-    <h3 >FaST - Webフレームワーク (開発中止)</h3>
+    <h2 >過去の作品 / プロジェクト</h2>
+    <h3 >FaST - Webフレームワーク (Blveに統合)</h3>
     <p>卒業論文のために作成したWebフレームワークです。</p>
     <p>可視アンカーという手法を用いることにより高速なレンダリングを実現しました。<p>
     <p>本フレームワークについて書いた論文が慶應SFC 優秀卒業プロジェクトを受賞しました。<p>
     <p>以下の図が示す通り、Vue.jsやReact.jsやSvelteと比較して高速なレンダリングを実現しています。</p>
     <p>FaSTフレームワークの開発プロジェクトは現在中止しており、同様の手法を用いながらRustで開発したBlveフレームワークに現在は注力しています。</p>
-    <img style="width:50%;margin:auto;" src="./boxplot-1000-6000.png">
+    <h4>他フレームワークとFaSTのレンダリング速度の比較</h4>
+    <img style="width:50%;margin:auto;" src="./rendering_graph.png">
     </div>
     <h3 >Vucript</h3>
     <p>Vue.jsのコードを書きやすくするためのライブラリです。</p>
     <p><a href="https://qiita.com/s19514tt/items/fe050cc85e536ef8bf36">Qiita記事</a>に詳細を記しています</p>
     <h2>経歴 / Career</h2>
-    <h3>2019年4月 - 2023年3月</h3>
-    <h4>慶應義塾大学 総合政策学部 総合政策学科</h4>
-    <h3>2023年4月 - </h3>
-    <h4>慶應義塾大学大学院 政策・メディア研究科 政策・メディア専攻</h4>
-    <h3>2021年8月 - 現在</h3>
-    <h4>株式会社ispecでフルスタックエンジニアとしてインターン(SaaSの開発、社内業務効率化に携わる)</h4>
+      2019年4月 - 2023年3月: 慶應義塾大学 総合政策学部 総合政策学科<br><br>
+      2023年4月 - 現在(2025年3月卒業予定): 慶應義塾大学大学院 政策メディア研究科 政策メディア専攻 サイバーインフォマティクスコース在籍中<br><br>
+      2021年8月 - 現在: 株式会社ispecでフルスタックエンジニアとしてインターン(SaaSの開発、社内業務効率化に携わる)<br><br>
     <h2>学会参加歴および受賞歴</h2>
     <div>
       <h3>第24回プログラミングおよびプログラミング言語ワークショップ ポスター発表</h3>
@@ -66,12 +66,16 @@ html:
     </div>
     <h2>スキル / Skills</h2>
     <div>
-      <h3>Go言語</h3>
-      <p>インターン先でのバックエンド開発では、主にGo言語を用いて開発を行いました。</p>
-      <p>SaaSや社内業務効率化ツールの開発に用いた経験があり、GORMやginなどのライブラリの使用経験があります。</p>
-      <h3>TypeScript</h3>
+      <h3>TypeScript / JavaScript</h3>
       <p>フロントエンドおよびバックエンドでの開発経験があります。</p>
-      <h3>Flutter</h3>
+      <h3>Vue.js / Angular / React / Svelte</h3>
+      <p>フレームワークを用いたWebアプリケーション開発経験があります。</p>
+      <p>Vue.jsとAngularは業務で利用した経験があり、ReactとSvelteは個人開発で利用した経験があります。</p>
+      <h3>Go言語</h3>
+      <p>インターン先でのWebアプリケーションバックエンド開発や、業務効率化ツールの開発に使用しました。</p>
+      <h3>Python</h3>
+      <p>機械学習や、データの統計解析・前処理の利用経験があります。</p>
+      <h3>Dart / Flutter</h3>
       <p>人狼ビレッジオンラインのアプリ開発で使用しました。</p>
       <h3>Rust</h3>
       <p>BlveというWebフレームワークを開発に使用しています。</p>
@@ -117,7 +121,6 @@ style:
     justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
-
   }
 
   .profile_img {
