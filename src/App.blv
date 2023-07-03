@@ -47,7 +47,7 @@ html:
     <img style="width:50%;margin:auto;" src="./rendering_graph.png">
     </div>
     <h3 >Vucript</h3>
-    <p>Vue.jsのコードを書きやすくするためのライブラリです。</p>
+    <p>Vue.jsのコードを書きやすくするためのスクリプト言語です。</p>
     <p><a href="https://qiita.com/s19514tt/items/fe050cc85e536ef8bf36">Qiita記事</a>に詳細を記しています</p>
     <h2>経歴 / Career</h2>
       2019年4月 - 2023年3月: 慶應義塾大学 総合政策学部 総合政策学科<br><br>
