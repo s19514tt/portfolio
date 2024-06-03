@@ -2,8 +2,8 @@ html:
   <div class="container">
     <div class="languages">
     Language:
-      <a @click="language = 'en'">English</a> |
-      <a @click="language = 'ja'">日本語</a>
+      <a class="language-changer" @click="language = 'en'">English</a> |
+      <a class="language-changer" @click="language = 'ja'">日本語</a>
     </div>
     <div class="profile_head">
       <div>
@@ -29,7 +29,6 @@ html:
     <div class="toc">
     <h2>Table of Contents</h2>
     <ul>
-        <li><a href="#profile">Profile</a></li>
         <li><a href="#works">Current Works / Projects</a></li>
         <li><a href="#past-works">Past Works / Projects</a></li>
         <li><a href="#career">Career</a></li>
@@ -267,4 +266,9 @@ style:
 
   .toc a{
     color: #333;
+  }
+
+  .language-changer{
+    cursor: pointer;
+    text-decoration: underline;
   }
