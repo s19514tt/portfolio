@@ -1,5 +1,10 @@
 html:
   <div class="container">
+    <div class="languages">
+    Language:
+      <a @click="language = 'en'">English</a> |
+      <a @click="language = 'ja'">日本語</a>
+    </div>
     <div class="profile_head">
       <div>
         <p class="sawarabi">Welcome to the portfolio of ${name}</p>
@@ -7,82 +12,196 @@ html:
       </div>
       <img class="profile_img" src="./my-icon-512.jpg">
     </div>
-    <h2 >現在開発中・運営中の作品 / プロジェクト</h2>
-    <h3 >Blve - Webフロントエンドフレームワーク</h3>
-    <div>
-      <p>高速かつ洗練されたWebフロントエンドフレームワークです。</p>
-      <p>React・Vue.js・Svelteと比較して高速なレンダリングを目指して、開発を行っています。</p>
-      <p>現在はまだベータ版で、利用できる機能は限られていますが、今後も機能を追加していく予定です。</p>
-      <p>このポートフォリオはBlveを用いて作成されています。(<a href="https://github.com/s19514tt/portfolio">このポートフォリオのリポジトリ</a>)</p>
-      <p>Blveのリポジトリは<a href="https://github.com/blvedev/blve">こちら</a>です。</p>
-      <h4>使用技術</h4>
-      <ul>
-        <li>Rust(Blveのコンパイラ部分)</li>
-        <li>WebAssembly</li>
-        <li>JavaScript</li>
-      </ul>
-      <h3 >人狼ビレッジオンライン</h3>
-      <p>人狼ゲームをオンラインで遊べるサービスです。</p>
-      <p>企画・デザイン・アプリ開発・バックエンド開発・インフラ構築など、イラストを除く全ての開発を1人で担当しました。</p>
-      <p>40カ国以上で遊ばれた実績があり、現在も運営を続けています。</p>
-      <p><a href="https://werewolf-village.com/">人狼ビレッジオンライン公式ホームページ</a></p>
-      <h4>使用技術</h4>
-      <ul>
-        <li>Dart(Flutter) - アプリ開発</li>
-        <li>TypeScript - バックエンド開発</li>
-        <li>Google Cloud Platform - インフラ構築</li>
-        <li>TypeScript & Vue - 管理画面開発</li>
-        <li>MySQL - データベース</li>
-        <li>Redis - キャッシュ用データベース</li>
-        <li>MongoDB - キャッシュ用データベース</li>
-      </ul>
-    <h2 >過去の作品 / プロジェクト</h2>
-    <h3 >FaST - Webフレームワーク (Blveに統合)</h3>
-    <p>卒業論文のために作成したWebフレームワークです。</p>
-    <p>可視アンカーという手法を用いることにより高速なレンダリングを実現しました。<p>
-    <p>本フレームワークについて書いた論文が慶應SFC 優秀卒業プロジェクトを受賞しました。<p>
-    <p>以下の図が示す通り、Vue.jsやReact.jsやSvelteと比較して高速なレンダリングを実現しています。</p>
-    <p>FaSTフレームワークの開発プロジェクトは現在中止しており、同様の手法を用いながらRustで開発したBlveフレームワークに現在は注力しています。</p>
-    <h4>他フレームワークとFaSTのレンダリング速度の比較</h4>
-    <img style="width:50%;margin:auto;" src="./rendering_graph.png">
+    <div class="social_link">
+      <a href="https://www.linkedin.com/in/tatsuru-tomizawa/" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+        </svg>
+      </a>
+      </svg>
+      <a href="https://twitter.com/tomu_1576" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+        </svg>
+      </a>
     </div>
-    <h3 >Vucript</h3>
-    <p>Vue.jsのコードを書きやすくするためのスクリプト言語です。</p>
-    <p><a href="https://qiita.com/s19514tt/items/fe050cc85e536ef8bf36">Qiita記事</a>に詳細を記しています</p>
-    <h2>経歴 / Career</h2>
-      2019年4月 - 2023年3月: 慶應義塾大学 総合政策学部 総合政策学科<br><br>
-      2023年4月 - 現在(2025年3月卒業予定): 慶應義塾大学大学院 政策メディア研究科 政策メディア専攻 サイバーインフォマティクスコース在籍中<br><br>
-      2021年8月 - 現在: 株式会社ispecでフルスタックエンジニアとしてインターン(SaaSの開発、社内業務効率化に携わる)<br><br>
-    <h2>学会参加歴および受賞歴</h2>
-    <div>
-      <h3>第24回プログラミングおよびプログラミング言語ワークショップ ポスター発表</h3>
-      <p>学会発表テーマ：Webフロントエンドにおけるプリプロセッサ言語によるスクリプトの簡略化</p>
-      <p>発表年月：2022年3月</p>
+    <div :if="language === 'en'">
+    <div class="toc">
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#works">Current Works / Projects</a></li>
+        <li><a href="#past-works">Past Works / Projects</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#conferences">Conference Participation and Awards</a></li>
+        <li><a href="#skills">Skills</a></li>
+    </ul>
     </div>
-    <div>
-      <h3>慶應SFC 2022年度秋学期 優秀卒業プロジェクト 受賞</h3>
-      <p>学会発表テーマ：FaSTコンパイラ: 明示的目印Refと値の静的評価によるWebフロントエンドデータバインディングの高速化</p>
-      <p>発表年月：2023年3月</p>
-    </div>
-    <h2>スキル / Skills</h2>
-    <div>
-      <h3>TypeScript / JavaScript</h3>
-      <p>フロントエンドおよびバックエンドでの開発経験があります。</p>
-      <h3>Vue.js / Angular / React / Svelte</h3>
-      <p>フレームワークを用いたWebアプリケーション開発経験があります。</p>
-      <p>Vue.jsとAngularは業務で利用した経験があり、ReactとSvelteは個人開発で利用した経験があります。</p>
-      <h3>Go言語</h3>
-      <p>インターン先でのWebアプリケーションバックエンド開発や、業務効率化ツールの開発に使用しました。</p>
-      <h3>Python</h3>
-      <p>機械学習や、データの統計解析・前処理の利用経験があります。</p>
-      <h3>Dart / Flutter</h3>
-      <p>人狼ビレッジオンラインのアプリ開発で使用しました。</p>
-      <h3>Rust</h3>
-      <p>BlveというWebフレームワークを開発に使用しています。</p>
-      <h3>C#</h3>
-      <p>Unityでのゲーム開発で使用しました。</p>
-      <h3>英語</h3>
-      <p>ビジネスレベルの英語力があります。</p>
+      <h2 id="works">Current Works / Projects</h2>
+      <h3>Blve - Web Frontend Framework</h3>
+      <div>
+          <p>A fast and sophisticated web frontend framework.</p>
+          <p>We are developing it aiming for faster rendering compared to React, Vue.js, and Svelte.</p>
+          <p>Currently, it's still in beta, with limited features available, but we plan to add more features in the future.</p>
+          <p>This portfolio is created using Blve. (<a href="https://github.com/s19514tt/portfolio">Repository of this portfolio</a>)</p>
+          <p>The Blve repository is <a href="https://github.com/blvedev/blve">here</a>.</p>
+          <h4>Technologies Used</h4>
+          <ul>
+              <li>Rust (Compiler part of Blve)</li>
+              <li>WebAssembly</li>
+              <li>JavaScript</li>
+          </ul>
+          <h3>Werewolf Village Online</h3>
+          <p>An online service to play the Werewolf game.</p>
+          <p>I was responsible for all the development, except for the illustrations, including planning, design, app development, backend development, and infrastructure setup.</p>
+          <p>It has been played in over 40 countries and is still in operation.</p>
+          <p><a href="https://werewolf-village.com/">Official Website of Werewolf Village Online</a></p>
+          <h4>Technologies Used</h4>
+          <ul>
+              <li>Dart (Flutter) - App Development</li>
+              <li>TypeScript - Backend Development</li>
+              <li>Google Cloud Platform - Infrastructure Setup</li>
+              <li>TypeScript & Vue - Admin Panel Development</li>
+              <li>MySQL - Database</li>
+              <li>Redis - Cache Database</li>
+              <li>MongoDB - Cache Database</li>
+          </ul>
+      </div>
+      <h2 id="past-works">Past Works / Projects</h2>
+      <h3>FaST - Web Framework (Integrated into Blve)</h3>
+      <p>A web framework created for my graduation thesis.</p>
+      <p>Achieved fast rendering using a technique called visible anchors.</p>
+      <p>The paper on this framework won the Keio SFC Excellent Graduation Project Award.</p>
+      <p>As shown in the graph below, it achieves faster rendering compared to Vue.js, React.js, and Svelte.</p>
+      <p>The development project for the FaST framework is currently suspended, and I am now focusing on the Blve framework developed with Rust using similar techniques.</p>
+      <h4>Comparison of Rendering Speeds between FaST and Other Frameworks</h4>
+      <img style="width:50%;margin:auto;" src="./rendering_graph.png">
+      <h3>Vucript</h3>
+      <p>A scripting language to make writing Vue.js code easier.</p>
+      <p>Details are written in the <a href="https://qiita.com/s19514tt/items/fe050cc85e536ef8bf36">Qiita article</a>.</p>
+      <h2 id="career">Career</h2>
+      <p>April 2019 - March 2023: Keio University, Faculty of Policy Management, Department of Policy Management</p>
+      <p>April 2023 - Present (Expected Graduation: March 2025): Keio University Graduate School of Media and Governance, Major in Media and Governance, Cyber Informatics Course</p>
+      <p>August 2021 - Present: Full-stack engineer intern at ispec Inc. (Involved in SaaS development and internal business efficiency)</p>
+      <h2 id="conferences">Conference Participation and Awards</h2>
+      <div>
+          <h3>The 2024 ACM Web Conference</h3>
+          <p>Conference Presentation Theme: "FaST: Accelerating Web Front-end Data Binding with Compiler and Visible Anchor"</p>
+          <p>Presentation Date: May 2024</p>
+          <p>Presentation Location: Singapore, Singapore</p>
+          <p>Presentation Track: Short Paper</p>
+          <p><a href="https://dl.acm.org/doi/abs/10.1145/3589335.3651505" target="_blank">Link to the paper</a></p>
+      </div>
+      <div>
+          <h3>24th Programming and Programming Languages Workshop Poster Presentation</h3>
+          <p>Conference Presentation Theme: Simplification of Scripts with Preprocessor Languages in Web Frontend</p>
+          <p>Presentation Date: March 2022</p>
+          <p>Presentation Location: Online</p>
+      </div>
+      <div>
+          <h3>Keio SFC Fall Semester 2022 Excellent Graduation Project Award</h3>
+          <p>Conference Presentation Theme: FaST Compiler: Speeding up Web Frontend Data Binding with Explicit Markers and Static Evaluation of Values</p>
+          <p>Presentation Date: March 2023</p>
+      </div>
+      <h2 id="skills">Skills</h2>
+      <div>
+          <h3>TypeScript / JavaScript</h3>
+          <p>Experience in both frontend and backend development.</p>
+          <h3>Vue.js / Angular / React / Svelte</h3>
+          <p>Experience in developing web applications using frameworks.</p>
+          <p>Have used Vue.js and Angular in professional work, and React and Svelte in personal projects.</p>
+          <h3>Go Language</h3>
+          <p>Used for backend development of web applications and development of business efficiency tools during internships.</p>
+          <h3>Python</h3>
+          <p>Experience in machine learning and data statistical analysis/preprocessing.</p>
+          <h3>Dart / Flutter</h3>
+          <p>Used for app development of Werewolf Village Online.</p>
+          <h3>Rust</h3>
+          <p>Used for developing the Blve web framework.</p>
+          <h3>C#</h3>
+          <p>Used for game development with Unity.</p>
+          <h3>Japanese</h3>
+          <p>Native language</p>
+      </div>
+  </div>
+    <div :if="language === 'ja'">
+      <h2 >現在開発中・運営中の作品 / プロジェクト</h2>
+      <h3 >Blve - Webフロントエンドフレームワーク</h3>
+      <div>
+        <p>高速かつ洗練されたWebフロントエンドフレームワークです。</p>
+        <p>React・Vue.js・Svelteと比較して高速なレンダリングを目指して、開発を行っています。</p>
+        <p>現在はまだベータ版で、利用できる機能は限られていますが、今後も機能を追加していく予定です。</p>
+        <p>このポートフォリオはBlveを用いて作成されています。(<a href="https://github.com/s19514tt/portfolio">このポートフォリオのリポジトリ</a>)</p>
+        <p>Blveのリポジトリは<a href="https://github.com/blvedev/blve">こちら</a>です。</p>
+        <h4>使用技術</h4>
+        <ul>
+          <li>Rust(Blveのコンパイラ部分)</li>
+          <li>WebAssembly</li>
+          <li>JavaScript</li>
+        </ul>
+        <h3 >人狼ビレッジオンライン</h3>
+        <p>人狼ゲームをオンラインで遊べるサービスです。</p>
+        <p>企画・デザイン・アプリ開発・バックエンド開発・インフラ構築など、イラストを除く全ての開発を1人で担当しました。</p>
+        <p>40カ国以上で遊ばれた実績があり、現在も運営を続けています。</p>
+        <p><a href="https://werewolf-village.com/">人狼ビレッジオンライン公式ホームページ</a></p>
+        <h4>使用技術</h4>
+        <ul>
+          <li>Dart(Flutter) - アプリ開発</li>
+          <li>TypeScript - バックエンド開発</li>
+          <li>Google Cloud Platform - インフラ構築</li>
+          <li>TypeScript & Vue - 管理画面開発</li>
+          <li>MySQL - データベース</li>
+          <li>Redis - キャッシュ用データベース</li>
+          <li>MongoDB - キャッシュ用データベース</li>
+        </ul>
+      <h2 >過去の作品 / プロジェクト</h2>
+      <h3 >FaST - Webフレームワーク (Blveに統合)</h3>
+      <p>卒業論文のために作成したWebフレームワークです。</p>
+      <p>可視アンカーという手法を用いることにより高速なレンダリングを実現しました。<p>
+      <p>本フレームワークについて書いた論文が慶應SFC 優秀卒業プロジェクトを受賞しました。<p>
+      <p>以下の図が示す通り、Vue.jsやReact.jsやSvelteと比較して高速なレンダリングを実現しています。</p>
+      <p>FaSTフレームワークの開発プロジェクトは現在中止しており、同様の手法を用いながらRustで開発したBlveフレームワークに現在は注力しています。</p>
+      <h4>他フレームワークとFaSTのレンダリング速度の比較</h4>
+      <img style="width:50%;margin:auto;" src="./rendering_graph.png">
+      </div>
+      <h3 >Vucript</h3>
+      <p>Vue.jsのコードを書きやすくするためのスクリプト言語です。</p>
+      <p><a href="https://qiita.com/s19514tt/items/fe050cc85e536ef8bf36">Qiita記事</a>に詳細を記しています</p>
+      <h2>経歴 / Career</h2>
+        2019年4月 - 2023年3月: 慶應義塾大学 総合政策学部 総合政策学科<br><br>
+        2023年4月 - 現在(2025年3月卒業予定): 慶應義塾大学大学院 政策メディア研究科 政策メディア専攻 サイバーインフォマティクスコース在籍中<br><br>
+        2021年8月 - 現在: 株式会社ispecでフルスタックエンジニアとしてインターン(SaaSの開発、社内業務効率化に携わる)<br><br>
+      <h2>学会参加歴および受賞歴</h2>
+      <div>
+        <h3>第24回プログラミングおよびプログラミング言語ワークショップ ポスター発表</h3>
+        <p>学会発表テーマ：Webフロントエンドにおけるプリプロセッサ言語によるスクリプトの簡略化</p>
+        <p>発表年月：2022年3月</p>
+      </div>
+      <div>
+        <h3>慶應SFC 2022年度秋学期 優秀卒業プロジェクト 受賞</h3>
+        <p>学会発表テーマ：FaSTコンパイラ: 明示的目印Refと値の静的評価によるWebフロントエンドデータバインディングの高速化</p>
+        <p>発表年月：2023年3月</p>
+      </div>
+      <h2>スキル / Skills</h2>
+      <div>
+        <h3>TypeScript / JavaScript</h3>
+        <p>フロントエンドおよびバックエンドでの開発経験があります。</p>
+        <h3>Vue.js / Angular / React / Svelte</h3>
+        <p>フレームワークを用いたWebアプリケーション開発経験があります。</p>
+        <p>Vue.jsとAngularは業務で利用した経験があり、ReactとSvelteは個人開発で利用した経験があります。</p>
+        <h3>Go言語</h3>
+        <p>インターン先でのWebアプリケーションバックエンド開発や、業務効率化ツールの開発に使用しました。</p>
+        <h3>Python</h3>
+        <p>機械学習や、データの統計解析・前処理の利用経験があります。</p>
+        <h3>Dart / Flutter</h3>
+        <p>人狼ビレッジオンラインのアプリ開発で使用しました。</p>
+        <h3>Rust</h3>
+        <p>BlveというWebフレームワークを開発に使用しています。</p>
+        <h3>C#</h3>
+        <p>Unityでのゲーム開発で使用しました。</p>
+        <h3>英語</h3>
+        <p>ビジネスレベルの英語力があります。</p>
+      </div>
     </div>
   </div>
 script:
@@ -95,17 +214,21 @@ script:
       my_role = "a student"
     }
   }, 5000)
+  let language = "en"
 style:
   .container {
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0 0 10px #ccc;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.8);
-
     color: #333;
+
+    @media (max-width: 600px) {
+      border-radius: 0;
+    }
   }
 
   h1, h2 {
@@ -127,4 +250,21 @@ style:
     border-radius: 50%;
     height: 200px;
     width: 200px;
+  }
+
+  .social_link {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .toc {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+
+  .toc a{
+    color: #333;
   }

@@ -12,6 +12,6 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "blve": "^0.0.1-beta.1"
+    "blve": "^0.0.1-beta.3"
   }
 }
